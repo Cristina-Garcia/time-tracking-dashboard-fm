@@ -1,0 +1,80 @@
+.category-card {
+  width: 255px;
+  height: 199px;
+  border-radius: 15px;
+  padding: 32px 30px;
+  box-sizing: border-box;
+  background-color: var(--dark-blue);
+
+  position: relative;
+  top: -7.2em;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--desaturated-blue);
+  }
+  /* z-index: 1; */
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & h4 {
+    color: #fff;
+  }
+}
+.category-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 24px;
+}
+.category-color {
+  width: 255px;
+  height: 160px;
+  /* border-top-right-radius: 15px;
+  border-top-left-radius: 15px; */
+  border-radius: 15px;
+  position: relative;
+
+  & img {
+    position: absolute;
+    right: 15px;
+  }
+}
+
+.category-work {
+  background-color: var(--work-light-red);
+}
+.category-play {
+  background-color: var(--play-soft-blue);
+}
+.category-study {
+  background-color: var(--study-light-red);
+}
+.category-exercise {
+  background-color: var(--excersice-lime-green);
+}
+.category-social {
+  background-color: var(--social-violet);
+}
+.category-self-care {
+  background-color: var(--self-care-soft-orange);
+}
+
+@media (max-width: 450px) {
+  .category-color,
+  .category-card {
+    width: inherit;
+  }
+  .category-card {
+    padding: 28px 24px;
+    height: 120px;
+  }
+  .category-info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+  }
+}
